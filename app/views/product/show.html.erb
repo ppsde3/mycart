@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-image">
+        <% if @product.img? %>
+         <%= image_tag(@product.img, class: '') %>
+         <% end %>
+          <span class="card-title"><%= @product.title %></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m5">
+      <div class="card large ">
+        <div class="card-content">
+          <p><%= @product.description %></p>
+        </div>
+        <div class="card-action">
+          <a href="#">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
